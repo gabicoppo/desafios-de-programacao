@@ -4,4 +4,4 @@ Laboratórios da disciplina MC621, cursada no Instituto de Computacao da Unicamp
 
 ## Estrutura
 
-Cada pasta placar1 representa um Contest composto por cerca de 10 problemas (problem1, problem2, ...) em C++ e o pdf do problema.
+Cada `placarX` representa um Contest composto por pastas (`problem1`, `problem2`, ...). Em cada pasta contém o código (geralmente) em C++ e o PDF do problema.
