@@ -1,0 +1,11 @@
+# Ignora tudo por padrão
+*
+
+# Mas permite navegar pelas pastas
+!*/
+
+# Mantém apenas os arquivos-fonte .cpp
+!*.cpp
+
+# Sempre versiona o .gitignore
+!.gitignore
