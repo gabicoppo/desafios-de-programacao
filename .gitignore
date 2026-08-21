@@ -7,5 +7,6 @@
 # Mantém apenas os arquivos-fonte .cpp
 !*.cpp
 
-# Sempre versiona o .gitignore
+# Mantém o README e o próprio .gitignore
+!README.md
 !.gitignore
