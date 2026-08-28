@@ -19,24 +19,26 @@ int main()
     }
 
     for (int i = 0; i < doisn; i+=2) {
-        if (foo[i] < s) {  // se o fighter puder vencer, somamos a força, setamos o fighter como -1 e reiniciamos o loop
-            foo[i] = -1;
-            i = 0;
-            s += foo[i + 1];
-            continue;
-        } if (foo[i] == -1) {
+        if (foo[i] == -1) {
             continue;
         }
+        if (foo[i] < s) {  // se o fighter puder vencer, somamos a força, setamos o fighter como -1 e reiniciamos o loop
+            foo[i] = -1;
+            s += foo[i + 1];
+            i = -2;
+            continue;
+        } 
     }
 
     for (int i = 0; i < doisn; i+=2) {
         if (foo[i] != -1) {
             std::cout << "NO";
-            exit(0);
+            return 0;
         }
     }
     
     std::cout << "YES";
+    
     return 0;
 
 }
